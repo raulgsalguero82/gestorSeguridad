@@ -111,7 +111,7 @@ def authenticateUser():
             createLogEntry(evento)
             return {"token" : token}            
     except:
-        evento= " fallido"
+        evento=evento+ " fallido"
         createLogEntry(evento)
         abort(404)
 
